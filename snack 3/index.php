@@ -52,14 +52,7 @@ $posts = [
 
 $date = array_keys($posts);
 
-/* echo var_dump($posts) .'<br>' .'<br>';
-echo var_dump($date) .'<br>' .'<br>';
 
-echo var_dump($date[0]) .'<br>' .'<br>';
-
-echo var_dump($posts[$date[0]]) .'<br>' .'<br>';
-echo var_dump($posts[$date[1]]) .'<br>' .'<br>';
-echo var_dump($posts[$date[2]]) .'<br>' .'<br>'; */
 
 
 
