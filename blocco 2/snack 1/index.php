@@ -34,19 +34,36 @@ $ads = [
 
 ];
 
-$random_index = rand(0, count($ads) - 1);
+$index_true = [];
+
+
+
+for ($i=0; $i < count($ads); $i++) { 
+    if ($ads[$i]['is_active'] == true){
+        array_push($index_true, $ads[$i]);
+    }
+}
 
 
 
 
-echo var_dump($ads[$random_index]['image_path']);
-echo var_dump($ads[$random_index]['is_active']);
+
+echo var_dump($index_true);
+
+
+
+
+
+
 
 
 if ($ads[$random_index]['is_active'] == true){
     echo "<img src='$ads[$random_index]['image_path']' >";
 
-    
+}
+
+else {
+
 }
 
 
