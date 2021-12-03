@@ -36,24 +36,13 @@ $ads = [
 
 $index_true = [];
 
-
-
 for ($i=0; $i < count($ads); $i++) { 
     if ($ads[$i]['is_active'] == true){
         array_push($index_true, $ads[$i]);
     }
 }
 
-
-
-
-
 echo var_dump($index_true);
-
-
-
-
-
 
 
 
