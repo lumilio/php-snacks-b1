@@ -8,12 +8,22 @@ Se la nostra query è contenuta nella lista degli invitati stampare ok, altrimen
 
 <?php
 
+$name = $_GET['name'];
+
 $name_list = [
     'giorgio',
     'samuele',
     'tiziano',
     'francesco',
 ];
+
+
+if(in_array($name, $name_list)) {
+    echo 'Welcome you are!';
+  } else {
+    echo 'Entry forbidden, dark side you are!';
+  }
+
 
 ?>
 

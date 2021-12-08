@@ -28,17 +28,12 @@ echo var_dump($list);
 <body>
 
 
-    <form>
-    <label for="name"> write the badword</label>
+    <form action="./page2.php" method="get">
+    <label for="name"> write your name</label>
     <input type="text" name='name' id='name'>
-    <input type="submit" value='correggi'>
+    <input type="submit" value='verifica'>
     </form>
 
-    <p> <?php if (in_array('name', $list))
-        echo 'ok';
-        else echo 'ko'
-        ?>
-    </p>
 
 </body>
 </html>
