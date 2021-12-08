@@ -42,27 +42,16 @@ for ($i=0; $i < count($ads); $i++) {
     }
 }
 
-echo var_dump($index_true);
+/* echo var_dump($index_true) . '</br>' . '</br>'; */
+
+$random_true_id = (rand(1,count($index_true))) -1 ;
 
 
-
-if ($ads[$random_index]['is_active'] == true){
-    echo "<img src='$ads[$random_index]['image_path']' >";
-
-}
-
-else {
-
-}
-
-
-
-
-
-
-
-
-
+echo 
+"<div>
+<img style='width:200px;' src='{$index_true[$random_true_id]['image_path']}' alt=''>
+<a href='{$index_true[$random_true_id]['link']}'>link</a>
+</div>" ;
 
 ?>
 
